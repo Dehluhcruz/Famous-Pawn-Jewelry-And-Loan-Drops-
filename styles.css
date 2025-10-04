@@ -1,0 +1,32 @@
+:root{
+  --bg:#0b0d12; --fg:#eef0f4; --muted:#98a0ad; --card:#141925;
+  --accent:#f9c300; --accent2:#1e90ff; --gap:12px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+img{max-width:100%; display:block}
+a{color:inherit}
+header.top{display:flex; align-items:center; gap:12px; padding:14px 14px; border-bottom:1px solid #222838; position:sticky; top:0; background:linear-gradient(180deg,#0b0d12,rgba(11,13,18,.9))}
+.top .brand{display:flex; align-items:center; gap:10px}
+.top .brand h1{font-size:1.1rem; margin:0}
+.top .brand small{color:var(--muted)}
+nav.tabs{margin-left:auto; display:flex; gap:8px; flex-wrap:wrap}
+.tabs button{background:#151b28; border:1px solid #232a3a; color:#cfd3dc; padding:7px 10px; border-radius:999px; cursor:pointer; font-size:.9rem}
+.tabs button.active{background:var(--accent); border-color:var(--accent); color:#111}
+main{width:min(1200px,100%); margin:16px auto 60px; padding:0 12px}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:var(--gap)}
+.card{background:var(--card); border-radius:12px; overflow:hidden; position:relative; cursor:pointer; border:1px solid #1f2534}
+.card img{width:100%; height:220px; object-fit:cover}
+.badge{position:absolute; top:8px; left:8px; background:rgba(0,0,0,.55); padding:4px 8px; color:#fff; border-radius:6px; font-size:.75rem; border:1px solid rgba(255,255,255,.15)}
+.cap{padding:10px 12px; color:var(--muted); font-size:.92rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; border-top:1px solid #1e2533}
+footer{position:sticky; bottom:0; background:linear-gradient(0deg,#0b0d12,rgba(11,13,18,.85)); border-top:1px solid #222838; text-align:center; padding:8px 12px}
+#lightbox{position:fixed; inset:0; background:rgba(0,0,0,.85); display:grid; place-items:center; z-index:1000; padding:20px}
+#lightbox[hidden]{display:none}
+#lightbox img{max-width:96vw; max-height:80vh; border-radius:10px}
+#lightbox .caption{margin-top:8px; color:#e6e9ee; text-align:center}
+#lightbox .x, #lightbox .nav{position:fixed; background:rgba(0,0,0,.35); border:none; color:#fff; cursor:pointer}
+#lightbox .x{top:10px; right:12px; font-size:32px; width:44px; height:44px; border-radius:10px}
+#lightbox .nav{top:50%; transform:translateY(-50%); width:46px; height:64px; font-size:40px; border-radius:10px}
+#prev{left:12px} #next{right:12px}
+.qrstrip{display:flex; gap:12px; align-items:center; padding:10px 12px; background:#0f1420; border:1px dashed #263049; border-radius:12px; margin:12px 0; color:#cfd3dc}
+.qrstrip img{width:72px; height:72px}
