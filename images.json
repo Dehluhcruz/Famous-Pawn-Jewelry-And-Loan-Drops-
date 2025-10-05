@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "file": "images/2025-10-03__les-paul-studio__INV-1234.jpg",
+      "category": "guitars",
+      "date": "2025-10-03",
+      "sku": "INV-1234"
+    },
+    {
+      "file": "images/2025-10-02__cartier-tank-solo__INV-9912.jpg",
+      "category": "jewelry",
+      "date": "2025-10-02",
+      "sku": "INV-9912"
+    },
+    {
+      "file": "images/2025-10-01__macbook-pro-13__INV-5570.jpg",
+      "category": "electronics",
+      "date": "2025-10-01",
+      "sku": "INV-5570"
+    },
+    {
+      "file": "images/2025-09-30__ps5-slim__INV-7771.jpg",
+      "category": "electronics",
+      "date": "2025-09-30",
+      "sku": "INV-7771"
+    },
+    {
+      "file": "images/2025-09-29__dewalt-drill-set__INV-4412.jpg",
+      "category": "tools",
+      "date": "2025-09-29",
+      "sku": "INV-4412"
+    }
+  ]
+}
